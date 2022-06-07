@@ -19,10 +19,10 @@ Em uma pasta criada localmente no computador, buscamos agora
 1. Página principal do repositório;
 2. Apertar "main"
 3. Criar um branch
-O que é "branch"?: Branch nãoé um código novo, mas uma versão nova do seu código 
-Alterações nos arquivos (como add uma nova linha) não são automáticas e criar um novo branch, por exemplo, também NÃO é: logo, depois de criá-lo, também precisamos dar um pull no Bash;
-A main é um branch também, mas é o 'main branch';
-Merge vai juntar as nossas branchs e, depois disos, alterar uma não é sinônimo de alterar a outra;
+<br> O que é "branch"?: Branch nãoé um código novo, mas uma versão nova do seu código 
+<br> Alterações nos arquivos (como add uma nova linha) não são automáticas e criar um novo branch, por exemplo, também NÃO é: logo, depois de criá-lo, também precisamos dar um pull no Bash;
+<br> A main é um branch também, mas é o 'main branch';
+<br> Merge vai juntar as nossas branchs e, depois disos, alterar uma não é sinônimo de alterar a outra;
 
 ### Mudança de branch
 
