@@ -10,4 +10,11 @@ Tanto na sua criação quanto na alteração, realizamos o *commit*, que pode se
 
 ### Push do repositório
 
+Em uma pasta criada localmente no computador, buscamos agora 
+
 ### Pull do repositório
+
+
+###
+
+`git checkout 'nome_branch'` para mudar para uma determinada branch
