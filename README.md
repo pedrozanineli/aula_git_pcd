@@ -18,3 +18,5 @@ Em uma pasta criada localmente no computador, buscamos agora
 ### Mudança de branch
 
 `git checkout 'nome_branch'` para mudar para uma determinada branch
+
+### Fork e pull request
