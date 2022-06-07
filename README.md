@@ -15,6 +15,6 @@ Em uma pasta criada localmente no computador, buscamos agora
 ### Pull do repositório
 
 
-###
+### Mudança de branch
 
 `git checkout 'nome_branch'` para mudar para uma determinada branch
