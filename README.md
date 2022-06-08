@@ -2,43 +2,53 @@
 
 No presente repositório desenvolvido para a aula de Prática em Ciência de Dados, é descrito como utilizar o Git.
 
-## Grupo 5
+### Grupo 5
 - Artur Hosoi Kimura
 - Débora van Putten Chaves
 - Pedro Henrique Machado Zanineli
 - Pedro Thomazelli Ferreira
 
-### Criação e edição do repositório
+### <a name="sumario">Sumário</a>
+1. [Criação e edição do repositório](#edicao)
+2. [Repositório remoto para uma pasta local](#transferencia)
+3. [*Push* do repositório](#push)
+4. [*Pull* do repositório](#pull)
+4. [Criação de *branches*](#branches)
+5. 
 
-Como ponto de partida, o Github foi aberto em um navegador e, na parte superior da esquerda da tela inicial, criamos um repositório, adicionando um arquivo do tipo *README.md* e outros detalhes, um ponto que é relevante ser destacado é o quesito das licensas, que são de extrema importância quando for definir o que outras pessoas podem e o que não podem fazer com seu código. no caso, utilizaremos o GNU General Public License, ou seja, manteremos o código aberto. Em seguida, criamos um arquivo em Python seguindo o caminho `Add File > Create new file`, além de ter realizado uma alteração no *README*.
+---
 
-Tanto na sua criação quanto na alteração, realizamos o *commit*, que pode ser entendido como o ato de tornar permanente uma alteração que foi feita, sendo que sempre pode ser acompanhado de uma mensagem. Uma vez que os *commits* foram feitos, é possível clicar no símbolo de relógio na interface do Github para voltar em um determinado momento.
+### <a name="edicao">Criação e edição do repositório</a> | [Voltar](#sumario)
 
-### Tranferindo um repositório para uma pasta local
+Como ponto de partida, o Github foi aberto em um navegador e, na parte superior da esquerda da tela inicial, criamos um repositório, adicionando um arquivo do tipo *README.md* e outros detalhes. Um ponto que é relevante ser destacado é o quesito das licensas, que são de extrema importância na definição do que outras pessoas podem e o que não podem fazer com seu código. No caso, utilizaremos o GNU General Public License, ou seja, manteremos o código aberto. Em seguida, criamos um arquivo em Python seguindo o caminho `Add file > Create new file` (poderíamos também ter feito um upload de arquivo a partir do computador), além de ter realizado uma alteração no *README*.
 
-Para que possamos trabalhar com as pastas localmente no computador, primeiramente criamos uma pasta local, clicamos com o botão direito do mouse nela e abrimos o painel do Git Bash, em seguida utilizamos o comando __git clone link_do_repositório__, sendo que o link é obtido clicando no botão `Code ` no GitHub e copiando o link disponibilizado (é importante selecionar a opção __HTTPS__, quando gerar o link). Após executar o código, todos os arquivos presentes no momento no repositório são transportados à pasta local especificada.
+Tanto na sua criação quanto na alteração, realizamos o *commit*, que pode ser entendido como o ato de tornar permanente uma alteração que foi feita, sendo que sempre pode ser acompanhado de um nome e uma mensagem. Uma vez que os *commits* foram feitos, é possível clicar no símbolo de relógio na interface do Github para voltar em um determinado momento, ou seja, restaurar uma versão específica do código.
 
-Também é de extrema importância ressaltar que, toda vez que algum arquivo é alterado localmente, isto é, diretamente num arquivo no computador, as edições não são sincronizadas aos arquivos do repositório no GitHub, sendo assim, é necessário executar uma série de comandos para que sejam armazenadas. Em primeira instância, podemos utilizar o comando __git status__ no diretório para ver se existe algum arquivo que foi alterado e ainda não "salvo". Caso exista, devemos usar o comando __git add .__ (ou __git add nome_do_arquivo_alterado__) seguido pelo __git commit -m "nome_do_arquivo_alterado"__, que irá "confirmar" a edição e gerar a mensagem de *commit*, mas você poderá perceber que as mudanças ainda não foram armazenadas no repositório do GitHub. Para que isso aconteça, é necessário utilizar o  comando __git push__, para finalmente mandar as edições de volta e atualizar o conteúdo do repositório.
+### <a name="transferencia">Repositório remoto para uma pasta local</a> | [Voltar](#sumario)
 
-### Push do repositório
+Para que possamos trabalhar com as pastas localmente no computador, primeiramente criamos uma pasta local, clicamos com o botão direito do mouse nela e abrimos o painel do *Git Bash*. Em seguida, utilizamos o comando `git clone 'link do repositório'`, sendo que o link é obtido clicando no botão `Code` no GitHub e copiando o link disponibilizado (é importante selecionar a opção __HTTPS__, quando a janela for aberta). Após executar o código, todos os arquivos presentes no momento que estão no repositório são transportados à pasta local especificada.
 
-Em uma pasta criada localmente no computador, buscamos agora, através do comando __git push__ (depois da utilização do comando __git add nome_do_arquivo__ (ou __git add .__, nesse caso não é necessário especificar o nome do arquivo), e do comando __git commit -m "nome_do_arquivo_alterado"__), transferir o tudo o que editamos/criamos definitivamente para o repositório alvo online, no GitHub.
+Também é de extrema importância ressaltar que, toda vez que algum arquivo é alterado localmente, isto é, diretamente num arquivo no computador, as edições não são sincronizadas aos arquivos do repositório no GitHub, sendo assim, é necessário executar uma série de comandos para que sejam armazenadas. Em primeira instância, podemos utilizar o comando `git status` no diretório para ver se existe algum arquivo que foi alterado e ainda não "salvo" no repositório remoto (arquivos *staged*, *unstaged* e *untracked*).
 
-### Pull do repositório
+Caso existam arquivos que ainda não foram carregados, podemos usar o comando `git add .` ou `git add 'nome do arquivo alterado'` - para indicar quais arquivos desejamos realizar o upload, de forma que adicionará todos os arquivos e um especificado, respectivamente - seguido por `git commit -m "explicação da alteração"`, que irá "confirmar" a edição e gerar a mensagem de *commit*. Ainda é possível perceber que as mudanças ainda não foram armazenadas no repositório do GitHub. Para que isso aconteça, é necessário utilizar o  comando `git push`, para finalmente "mandar" as edições de volta e atualizar o conteúdo do repositório remoto.
 
-Utilizamos o comando __git pull__ no Git Bash sempre que desejamos transferir algo modificado ou criado no próprio repositório online do GitHub (após os devidos procedimentos de armazenamento dos arquivos, como o commit) para uma pasta criada localmente no computador, como se fosse o processo inverso do __git push__.
+### <a name="push">*Push* do repositório</a> | [Voltar](#sumario)
 
-### Criando branchs
-- Diretamente no GitHub
+Em uma pasta criada localmente no computador, buscamos agora, através do comando `git push` (depois da utilização do comando `git add 'nome do arquivo'` - ou `git add .`, para não especificar o nome do arquivo - , e do comando `git commit -m "explicação da alteração"`), transferir o tudo o que editamos/criamos definitivamente para o repositório alvo online, no GitHub.
+
+### <a name="pull">*Pull* do repositório</a> | [Voltar](#sumario)
+
+Utilizamos o comando `git pull` no *Git Bash* sempre que desejamos transferir algo modificado ou criado no próprio repositório online do GitHub (após os devidos procedimentos de armazenamento dos arquivos, como o commit) para uma pasta criada localmente no computador, sendo o processo inverso do `git push`.
+
+### <a name="branches">Criação de *branches*</a> | [Voltar](#sumario)
+
+Sobre *branches* de um código, podemos entendê-las não como um novo código, mas uma versão alternativa do seu código, um "universo paralelo" do que está acontecendo em um principal. Alterações nos arquivos (como adicionar uma nova linha) não são automáticas e criar um novo branch, por exemplo, também não é: logo, depois de criá-lo, também precisamos dar um *pull* no *Bash*. Note que a *main* também é uma *branch*, porém a principal, e o *merge* irá juntar duas *branches*, de forma que, depois disso, alterar uma não é sinônimo de alterar a outra;
+
+Para criar uma *branch* - diretamente no GitHub:
 1. Página principal do repositório;
-2. Apertar "main"
-3. Criar um branch
-
-__Informações relevantes:__
-<br> O que é "branch"?: Branch não é um código novo, mas uma versão nova do seu código 
-<br> Alterações nos arquivos (como add uma nova linha) não são automáticas e criar um novo branch, por exemplo, também NÃO é: logo, depois de criá-lo, também precisamos dar um pull no Bash;
-<br> A main é um branch também, mas é o 'main branch';
-<br> Merge vai juntar as nossas branchs e, depois disos, alterar uma não é sinônimo de alterar a outra;
+2. Apertar "main";
+3. Escrever o nome desejado para a ramificação;
+4. Clicar no botão `Create branch: 'nome da branch' from main`.
 
 ### Mudança de branch
 
@@ -53,7 +63,7 @@ Após fazer as modificações e edições desejadas nos arquivos, e tomar as med
 <hr>
 
 ## Anotações relevantes
-#### Geral
+### Geral
 <br> __ReadMe__ > cartão de visitas do repositório, com a finalidade de exibir uma descrição do mesmo.
 <br>Se os dados forem privados/secretos/particulares, __não__ faça um repositório aberto, porque QUALQUER UM pode acessar. Sempre converse sobre isso com as demais pessoas envolvidas no projeto;
 <br>Precisamos escolher __licenças__ para os nossos repositórios, o professor gosta da GNU, que é um Software livre;
