@@ -24,7 +24,7 @@ No presente repositório desenvolvido para a aula de Prática em Ciência de Dad
 
 Como ponto de partida, o Github foi aberto em um navegador e, na parte superior da esquerda da tela inicial, criamos um repositório, adicionando um arquivo do tipo *README.md* e outros detalhes. Um ponto que é relevante ser destacado é o quesito das licensas, que são de extrema importância na definição do que outras pessoas podem e o que não podem fazer com seu código. No caso, utilizaremos o GNU General Public License, ou seja, manteremos o código aberto. Em seguida, criamos um arquivo em Python seguindo o caminho `Add file > Create new file` (poderíamos também ter feito um upload de arquivo a partir do computador), além de ter realizado uma alteração no *README*.
 
-(imagem add_file)
+![add_file](images/add_file.PNG)
 
 Tanto na sua criação quanto na alteração, realizamos o *commit*, que pode ser entendido como o ato de tornar permanente uma alteração que foi feita, sendo que sempre pode ser acompanhado de um nome e uma mensagem. Uma vez que os *commits* foram feitos, é possível clicar no símbolo de relógio na interface do Github para voltar em um determinado momento, ou seja, restaurar uma versão específica do código.
 
@@ -32,7 +32,7 @@ Tanto na sua criação quanto na alteração, realizamos o *commit*, que pode se
 
 Para que possamos trabalhar com as pastas localmente no computador, primeiramente criamos uma pasta local, clicamos com o botão direito do mouse nela e abrimos o painel do *Git Bash*. Em seguida, utilizamos o comando `git clone 'link do repositório'`, sendo que o link é obtido clicando no botão `Code` no GitHub e copiando o link disponibilizado (é importante selecionar a opção __HTTPS__, quando a janela for aberta). Após executar o código, todos os arquivos presentes no momento que estão no repositório são transportados à pasta local especificada.
 
-(imagem git_bash)
+![git_bash](images/git_bash.PNG)
 
 Também é de extrema importância ressaltar que, toda vez que algum arquivo é alterado localmente, isto é, diretamente num arquivo no computador, as edições não são sincronizadas aos arquivos do repositório no GitHub, sendo assim, é necessário executar uma série de comandos para que sejam armazenadas. Em primeira instância, podemos utilizar o comando `git status` no diretório para ver se existe algum arquivo que foi alterado e ainda não "salvo" no repositório remoto (arquivos *staged*, *unstaged* e *untracked*).
 
@@ -56,7 +56,7 @@ Para criar uma *branch* - diretamente no GitHub:
 3. Escrever o nome desejado para a ramificação;
 4. Clicar no botão `Create branch: 'nome da branch' from main`.
 
-(imagem nova branch)
+![branch](images/branch.PNG)
 
 ### <a name="mudanca">Mudança de branch</a> | [Voltar](#sumario)
 
@@ -66,7 +66,7 @@ Uma vez criada, é possível alterar a versão do código para uma determinada *
 
 Um *Fork* é utilizado quando se quer fazer uma cópia do repositório de uma outra pessoa, permitindo a "clonagem" e modificação os arquivos livremente sem a preocupação de alterar o projeto original. É possível fazer um *Fork* clicando no botão cinza de mesmo nome no canto superior direito da tela (note que não é possível criar um *Fork* de um respositório criado por você mesmo).
 
-(imagem fork)
+![fork](images/fork.PNG)
 
 Após fazer as modificações e edições desejadas nos arquivos, e tomar as medidas necessárias para armazenar as mudanças (os mesmos comandos para armazenar informações alteradas demonstradas anteriormente), é ainda possível mandá-los de volta para o desenvolvedor original, através do *Pull request* (disponível na aba de ações na parte mais superior da interface, posicionada ao lado da opção "*Issues*"), porém, o mesmo poderá decidir atualizar seu código com as suas alterações ou rejeitá-las, dependendo de como julgá-las úteis ou melhores que as originais.
 
