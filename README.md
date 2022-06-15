@@ -8,6 +8,8 @@ No presente repositório desenvolvido para a aula de Prática em Ciência de Dad
 - Pedro Henrique Machado Zanineli
 - Pedro Thomazelli Ferreira
 
+DRC: legal! Gostei da organização! Gostei que tem imagens também.
+
 ### <a name="sumario">Sumário</a>
 1. [Criação e edição do repositório](#edicao)
 2. [Repositório remoto para uma pasta local](#transferencia)
@@ -22,7 +24,9 @@ No presente repositório desenvolvido para a aula de Prática em Ciência de Dad
 
 ### <a name="edicao">Criação e edição do repositório</a> | [Voltar](#sumario)
 
-Como ponto de partida, o Github foi aberto em um navegador e, na parte superior da esquerda da tela inicial, criamos um repositório, adicionando um arquivo do tipo *README.md* e outros detalhes. Um ponto que é relevante ser destacado é o quesito das licensas, que são de extrema importância na definição do que outras pessoas podem e o que não podem fazer com seu código. No caso, utilizaremos o GNU General Public License, ou seja, manteremos o código aberto. Em seguida, criamos um arquivo em Python seguindo o caminho `Add file > Create new file` (poderíamos também ter feito um upload de arquivo a partir do computador), além de ter realizado uma alteração no *README*.
+DRC: aqui nestas seções iniciais está escrito como um relatório. Vejam que não era para fazer um relatório da atividade, mas sim um manual de como usar o GitHub.
+
+Como ponto de partida, o Github foi aberto em um navegador e, na parte superior da esquerda da tela inicial, criamos um repositório, adicionando um arquivo do tipo *README.md* e outros detalhes. Um ponto que é relevante ser destacado é o quesito das licenças, que são de extrema importância na definição do que outras pessoas podem e o que não podem fazer com seu código. No caso, utilizaremos o GNU General Public License, ou seja, manteremos o código aberto. Em seguida, criamos um arquivo em Python seguindo o caminho `Add file > Create new file` (poderíamos também ter feito um upload de arquivo a partir do computador), além de ter realizado uma alteração no *README*.
 
 ![add_file](images/add_file.PNG)
 
@@ -64,7 +68,7 @@ Uma vez criada, é possível alterar a versão do código para uma determinada *
 
 ### <a name="forkepull">Fork e pull request</a> | [Voltar](#sumario)
 
-Um *Fork* é utilizado quando se quer fazer uma cópia do repositório de uma outra pessoa, permitindo a "clonagem" e modificação os arquivos livremente sem a preocupação de alterar o projeto original. É possível fazer um *Fork* clicando no botão cinza de mesmo nome no canto superior direito da tela (note que não é possível criar um *Fork* de um respositório criado por você mesmo).
+Um *Fork* é utilizado quando se quer fazer uma cópia do repositório de uma outra pessoa, permitindo a "clonagem" e modificação os arquivos livremente sem a preocupação de alterar o projeto original. É possível fazer um *Fork* clicando no botão cinza de mesmo nome no canto superior direito da tela (note que não é possível criar um *Fork* de um repositório criado por você mesmo).
 
 ![fork](images/fork.PNG)
 
@@ -75,6 +79,8 @@ Após fazer as modificações e edições desejadas nos arquivos, e tomar as med
 ## <a name="anotacoes">Anotações relevantes</a>
 
 [Voltar ao sumário](#sumario)
+
+DRC: muito boa essa seção!
 
 `README` → cartão de visitas do repositório, tem a finalidade de exibir uma descrição do mesmo;
 
@@ -96,6 +102,8 @@ Alterações __NÃO__ são automáticas, mudar algo no computador não é o mesm
 
 ### Comandos essenciais
 
+DRC: muito bom aqui também!
+
 1. `git status`: exibe o status do repositório local em relação ao repositório alvo, avisando caso exista alguma alteração a ser salva
 2. `cd` (change directory): muda de "pastas"/diretórios
 3. `ls` (list): fala o que tem dentro de diretório
@@ -103,3 +111,6 @@ Alterações __NÃO__ são automáticas, mudar algo no computador não é o mesm
 5. `git push`: comando final que manda para o servidor o que fizemos, ou seja, tira só do computador e manda para a internet
 6. `git pull`: transporta alterações feitas na internet para o próprio computador;
 7. `git commit -m '...'`: quando fazemos alguma alteração no GitHub na internet, nada funciona se não dermos o "commit". Fazendo as mudanças no computador é a mesma coisa, precisamos dar o commit também para que a mudança seja salva.
+
+
+DRC: Considerações finais: todo o conteúdo discutido em aula foi contemplado e está bastante claro. Muito bom!
