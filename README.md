@@ -64,7 +64,7 @@ Uma vez criada, é possível alterar a versão do código para uma determinada *
 
 ### <a name="forkepull">Fork e pull request</a> | [Voltar](#sumario)
 
-Um *Fork* é utilizado quando se quer fazer uma cópia do repositório de uma outra pessoa, permitindo a "clonagem" e modificação os arquivos livremente sem a preocupação de alterar o projeto original. É possível fazer um *Fork* clicando no botão cinza de mesmo nome no canto superior direito da tela (note que não é possível criar um *Fork* de um respositório criado por você mesmo).
+Um *Fork* é utilizado quando se quer fazer uma cópia do repositório de uma outra pessoa, permitindo a "clonagem" e modificação os arquivos livremente sem a preocupação de alterar o projeto original. É possível fazer um *Fork* clicando no botão cinza de mesmo nome no canto superior direito da tela (note que não é possível criar um *Fork* de um repositório criado por você mesmo).
 
 ![fork](images/fork.PNG)
 
